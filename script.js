@@ -43,6 +43,34 @@ function playVideo5(){
     iframe.setAttribute("src",url);
 }
 
-windows.scroll=()=>{
-    console.log(this.scrollY);
+
+
+
+// Button Top
+mybutton = document.getElementById("btn_up");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
+
+
+function topFunction() {
+  
+  document.documentElement.scrollTop = 0; 
+}
+// Button Top End
+
+
+// mybutton.addEventListener("click", backToTop);
+
+// function backToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
