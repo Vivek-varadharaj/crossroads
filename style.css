@@ -159,6 +159,7 @@ h2 {
 } */
 
 #video2 {
+    margin-bottom : 10px;
     left: 0;
     top: 18%;
     border: 2px solid rgb(0, 0, 0);
